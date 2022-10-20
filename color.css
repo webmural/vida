@@ -1,0 +1,35 @@
+::selection {
+  background: chocolate;
+  color: black;
+}
+
+:root {
+  color: #060606;
+  background: hotpink;
+}
+
+:any-link {
+  color: #020202;
+}
+
+mark {
+  color: #020202;
+  background: salmon;
+}
+
+@media (prefers-contrast: more) {
+  mark {
+    background: lightsalmon;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: salmon;
+    background: #020202;
+  }
+
+  :any-link {
+    color: hotpink;
+  }
+}
